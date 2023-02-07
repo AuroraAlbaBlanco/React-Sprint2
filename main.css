@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/* .image-1{
+/* .image1{
     position: absolute;
     z-index: 1;
-} */
+}  */
 /* .box{
     position: absolute;
     background-color: #5265E1;
@@ -10,9 +10,8 @@
     height: 15rem;
     border-top-left-radius:7rem;
     border-bottom-left-radius: 7rem;
-    z-index: -1;
-} 
-  */
+   z-index: -1; 
+} */
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
