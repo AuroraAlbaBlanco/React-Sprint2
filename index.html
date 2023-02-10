@@ -6,9 +6,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap CSS -->
+  <!-- Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./main.css">
-<!-- Titol -->
+  <!-- Titol -->
   <title>S2-AuroraAlba</title>
   <link rel="icon" href="./Imagenes/favicon-32x32.png">
 </head>
@@ -17,8 +21,8 @@
 <!-- contenidor general -->
   <header class="container-md">
   <!-- barra navegació -->
-    <nav class="navbar row fixed-top navbar-expand-md bg-body-light justify-content-md-between justify-content-md-center ">
-        <a class="navbar-nav-md col-md-4 offset-md-1 navbar-brand-md align-items-center" href="#">
+    <nav class="headerNav navbar row fixed-top navbar-expand-md justify-content-md-between">
+        <a class="navbar-nav-md navbar-brand-md col-md-4 offset-md-1  align-items-center" href="#">
           <img src="./Imagenes/logo-bookmark.svg" alt="Bookmark" width="" height="" class="imageLogo">
         </a>
         <div class="navbar navbar-nav navbar-brand-md-5 col-md-5" id="navbarNav">
@@ -33,81 +37,124 @@
               <a class="nav-link active text-uppercase" aria-current="page" href="#">Contact</a>
             </li>
             <li class="nav-item  d-grid gap-2 col-md-4 mx-autocol">
-              <button type="button" class="btn btn-danger text-uppercase">Login</button>
+              <button type="button" class="btn btn-secondary text-uppercase text-white">Login</button>
             </li>
           </ul>
         </div>
     </nav>
+
   </header>
+
 <!-- contingut -->
   <main class="container-md">
     <!-- seccio 1 : BookMark Manager-->
-      <section class="row justify-content-center align-content-center  mt-lg-5 pt-5 pe-lg-3">
-        <div class="col-lg-6 align-self-lg-center mt-lg-5"> 
-            <h1 class="col me-lg-2 mb-lg-1">A Simple Bookmark Manager</h1>
-            <p class="col mt-lg-3 me-lg-5 pe-lg-5">A clean and simple interface to organize your favourite
+      <section class="row justify-content-center align-content-center gy-1 gx-1 mt-5 ">
+        <div class="col-md-6 col-sm-12 align-self-center gx-5 order-md-1 order-2 "> 
+            <h1 class="col me-md-2 mb-md-1">A Simple Bookmark Manager</h1>
+            <p class="col mt-md-3 me-md-5 pe-md-5">A clean and simple interface to organize your favourite
               websites. Open a new browser tab and see your sites load
               instantly.Try it for free.
             </p>
           
-          <div class="col mt-lg-4">
+          <div class="col mt-md-4">
             <button type="button" class="chrome btn btn-primary btn-lg me-2">Get it on Chrome</button>
-            <button type="button" class="firefox btn btn-secondary btn-lg me-2">Get it on Firefox</button>
+            <button type="button" class="firefox btn btn-lg me-2 shadow  bg-body-tertiary rounded">Get it on Firefox</button>
           </div>
         </div>
 
-        <div class="col-lg-6 align-self-lg-center mt-lg-5 pt-5 pe-lg-3 text-center position-relative">
+        <div class="col-md-6  mt-md-5 pt-5 pe-md-3 position-relative order-1">
           <img src="./Imagenes/illustration-hero.svg"
-             alt="..." class="image-1">
-          <!-- <div class="box"></div> -->
+             alt="..." class="img-fluid">
+             <div class="blue-form-right rounded-pill bg-primary"></div>
         </div>
       </section>
     
     <!-- seccio 2 : Features -->
-    <section class="row justify-content-center align-content-center">
-        <div class="col-md-6 align-self-md-center mt-md-5">
+    <section class="features row justify-content-center ">
+        <div class="col-md-6 align-self-center mt-5">
           <h2 class="col me-md-3 mb-md-1 text-center">Features</h2>
           <p class="col mt-md-4 me-lg-3 mb-md-1 ps-md-2 pe-md-5 text-center">Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices 
             so you can access them on the go.
           </p>
         </div>
-        <div class="col-8 mt-md-4 ps-md-5">
-          <ul class="nav nav-tabs ps-md-5 pe-md-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Simple Bookmarking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Speedy Searching</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Easy Sharing</a>
-            </li>
-          </ul>
-        </div>
- 
-        <div class="col-lg-6 align-self-lg-center mt-lg-5 pt-5 ps-lg-3 text-center">
-          <img src="./Imagenes/illustration-features-original.svg">
-          <!-- <div class="box"></div> -->
-        </div>
 
-        <div class="col-lg-6 align-self-lg-center mt-md-5 p-md-5"> 
-          <h2 class="col ms-mg-2 mb-md-3 pe-mg-5 ps-md-5">Bookmark in one click</h2>
-          <p class="col mt-mg-3 me-mg-5 pe-mg-5 ps-md-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
-            you complete control over how you manage your favourite sites.
-          </p>
-        
-        <div class="col-md-6 p-md-5">
-          <button type="button" class="btn btn-primary btn-lg">More info</button>
-        </div>
+        <div class="row justify-content-center">
+          <ul class="nav nav-tabs flex-column align-items-center flex-md-row justify-content-between col-12 col-lg-7 p-lg-0 "
+              id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <button class="w-100 nav-link active px-md-4 py-3" id="feat-1-tab" data-bs-toggle="tab"
+                      data-bs-target="#feat-1" type="button" role="tab" aria-controls="feat-1"
+                      aria-selected="true">Simple Bookmarking</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="w-100 nav-link px-md-4 py-3 " id="feat-2-tab" data-bs-toggle="tab"
+                      data-bs-target="#feat-2" type="button" role="tab" aria-controls="feat-2"
+                      aria-selected="false">Speedy Searching</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link px-md-4 py-3" id="feat-3-tab" data-bs-toggle="tab"
+                      data-bs-target="#feat-3" type="button" role="tab" aria-controls="feat-3"
+                      aria-selected="false">Easy Sharing</button>
+              </li>
+
+          </ul>
+          <div class="tab-content mt-5 pt-5 pt-md-2 mb-5" id="myTabContent">
+  
+              <section class="tab-pane fade show active" id="feat-1" role="tabpanel" aria-labelledby="feat-1-tab">
+                  <div class="row align-items-center">
+                      <div class="col-md-6 mb-5 mg-md-0 mt-2 mt-md-0 px-4 text-center position-relative">
+                          <img class="img-fluid" src="./Imagenes/illustration-features-original.svg" alt="features 1">
+                          <div class="blue-form-left rounded-pill bg-primary"></div>
+                      </div>
+                      <div class="col-md-6 text-center mt-5 mt-md-0 text-md-start ps-md-5">
+                          <h3>Bookmark in one click</h3>
+                          <p class=" mt-3 mb-4 mx-5 mx-md-0 pe-md-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                          <button type="button"
+                              class="btn btn-primary shadow-sm me-2 d-none d-md-block border-2"><span class="small">More info</span></button>
+                      </div>
+                  </div>
+              </section>
+  
+              <section class="tab-pane fade" id="feat-2" role="tabpanel" aria-labelledby="feat-2-tab">
+                  <div class="row align-items-center">
+                      <div class="col-md-6 mb-5 mt-2 px-4 text-center position-relative overflow-auto">
+                          <img class="img-fluid" src="./Imagenes/illustration-features-tab-2.svg" alt="features 2">
+                          <div class="blue-form-left rounded-pill bg-primary"></div>
+                      </div>
+                      <div class="col-md-6 text-center mt-5 mt-md-0 text-md-start ps-md-5">
+                          <h3>Intelligent search</h3>
+                          <p class="mt-3 mb-4 mx-5 mx-md-0 pe-md-5">Our powerful search feature will help you find saved sites in no time at all. No need to trawi through all of your bookmarks.</p>
+                          <button type="button"
+                              class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
+                      </div>
+                  </div>
+              </section>
+  
+              <section class="tab-pane fade" id="feat-3" role="tabpanel" aria-labelledby="feat-3-tab">
+                  <div class="row align-items-center">
+                      <div class="col-md-6 mb-5 mg-md-0 mt-2 mt-md-0 px-4 text-center position-relative overflow-hidden">
+                          <img class="img-fluid" src="./Imagenes/illustration-features-tab-3.svg" alt="features 3">
+                          <div class="blue-form-left rounded-pill bg-primary"></div>
+                      </div>
+                      <div class="col-md-6 text-center mt-5 mt-md-0 text-md-start ps-md-5">
+                          <h3>Share your bookmarks</h3>
+                          <p class="mt-3 mb-4 mx-5 mx-md-0 pe-md-5">Easily share your bookmarks and collections with other. Create a shareable link that you can send at the click of a button.</p>
+                          <button type="button"
+                              class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
+                      </div>
+                  </div>
+              </section>
+          </div>
       </div>
+  </section>
 
     </section>
     
     <!-- seccio 3 : Download the extensions -->
     <section class="row justify-content-center align-content-center">
 
-      <div class="col-md-6 align-self-md-center mt-md-5 text-center">
+      <div class="col-md-6 align-self-md-center mt-5 text-center">
         <h2 class="col me-md-3 mb-md-1">Download the extension</h2>
         <p class="col ms-md-3 mt-md-4 pe-md-4">
           We've got more browsers in the pipeline. Please do let us know if
@@ -117,8 +164,8 @@
 
       <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center align-content-center">
 
-        <div class="col mt-md-1">
-          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="col gy-1">
+          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-primary rounded">
             <img src="./Imagenes/logo-chrome.svg" width="100" height="100" class="m-auto mt-5">
             <div class="card-body mt-2">
               <h5 class="card-title">Add to Chrome</h5>
@@ -126,13 +173,13 @@
             </div>
             <div>
               <img src="./Imagenes/bg-dots.svg" class="mb-3 pb-3 pt-3">
-              <button type="button" class="btn btn-primary">Add & Install Extension</button>
+              <button type="button" class="btn btn-primary ">Add & Install Extension</button>
             </div>
           </div>
         </div>
 
-        <div class="col mt-md-4">
-          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="col gy-4"> 
+          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-primary rounded">
             <img src="./Imagenes/logo-firefox.svg" width="100" height="100" class="m-auto mt-5">
             <div class="card-body mt-2">
               <h5 class="card-title">Add to Firefox</h5>
@@ -145,8 +192,8 @@
           </div>
         </div>
 
-        <div class="col mt-md-5">
-          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="col gy-5">
+          <div class="card h-100 text-center border border-0 shadow p-3 mb-5 bg-body-primary rounded">
             <img src="./Imagenes/logo-opera.svg" width="100" height="100" class="m-auto mt-5" >
             <div class="card-body mt-2">
               <h5 class="card-title">Add to Opera</h5>
@@ -165,7 +212,7 @@
 
     <!-- seccio 4 : FAQ's -->
     <section class="row justify-content-center align-content-center">
-      <div class="col-md-6 align-self-md-center mt-md-5 text-center">
+      <div class="col-md-6 align-self-center mt-5 text-center">
         <h2 class="col me-md-3 mb-md-1 ">Frequently Asked Questions</h2>
         <p class="col ms-md-3 mt-md-4 ps-md-4 pe-md-5">Here are some of our FAQ's. If you have any other questions
           you'd like answered please feel free to email us.
@@ -223,19 +270,18 @@
     </section>
      
 </main>
-  
-<footer class="container-md bg-secondary">
+
+<!-- footer -->
+<footer class="container-md">
   <!-- seccio 1 : Contact Us -->
- <!--  <section class="row justify-content-center align-content-center  mt-md-5 pt-5 pe-md-3 bg-primary">
+  <section class="row justify-content-center align-content-center  mt-md-5 pt-5 pe-md-3 bg-primary">
     <div class="col-auto">
-      <p class="text-uppercase text-center">35,000+ already joined</p>
-      <h2 class="p-md-4">Stay up-to-date with what
+      <p class="text-uppercase text-center text-white">35,000+ already joined</p>
+      <h2 class="p-md-4 text-white">Stay up-to-date with what
         we're doing
       </h2>
-    </div> -->
-
-  <!-- seccio 2 : Nav Footer -->
- <!--      <form class="row g-3 justify-content-center align-content-center">
+    </div>
+      <form class="row g-3 justify-content-center align-content-center">
      
         <div class="col-auto">
           <label for="inputEmail2" class="visually-hidden"></label>
@@ -245,23 +291,22 @@
           <button type="submit" class="btn btn-danger mb-3">Contact Us</button>
         </div>
       </form>
-
   </section> 
-
-  <nav class="navbar row  navbar-expand-md align-baseline">
+<!-- seccio 2 : Nav Footer -->
+  <nav class="navbar row  navbar-expand-md align-baseline footBack">
     <a class="navbar-nav-md col-md-2 navbar-brand-md" href="#">
-      <img src="./Imagenes/logo-bookmark.svg" alt="Bookmark" width="" height="" class="imageLogo">
+      <img src="./Imagenes/logo-bookmark.svg" alt="Bookmark" width="" height="" class="logoFoot img-fluid">
     </a>
     <div class="navbar navbar-nav navbar-brand-md-5" id="navbarNav">
       <ul class="navbar-nav row justify-content-evenly">
         <li class="nav-item col-2">
-          <a class="nav-link active text-uppercase" aria-current="page" href="#">Features</a>
+          <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">Features</a>
         </li>
         <li class="nav-item col-2">
-          <a class="nav-link active text-uppercase" aria-current="page" href="#">Pricing</a>
+          <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">Pricing</a>
         </li>
         <li class="nav-item col-2">
-          <a class="nav-link active text-uppercase" aria-current="page" href="#">Contact</a>
+          <a class="nav-link active text-uppercase text-white" aria-current="page" href="#">Contact</a>
         </li>
         <li class="nav-item col-2">
           <a class="nav-link" href="#"><img src="./Imagenes/icon-facebook.svg"></a>
@@ -271,7 +316,7 @@
         </li>
       </ul>
     </div>
-</nav> -->
+</nav>
 
 </footer> 
 
